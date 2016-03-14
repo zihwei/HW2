@@ -49,6 +49,7 @@ public class Week2_HW4_1 {
             System.out.println("半長軸:" + radius[num][0]);
             System.out.println("半短軸:" + radius[num][1]);
             System.out.println("面積:" + o.Pie());
+            System.out.println("周長:"+o.Arc());
         } else {
             System.out.println("無此編號");
         }
@@ -88,5 +89,11 @@ class Oval extends Circle {
 
     double Pie() {
         return (r*rshort*3.14);
+    }
+    double Arc() {
+        
+        
+       return 2 * 3.14 * rshort + 4 * (r - rshort);
+         
     }
 }
